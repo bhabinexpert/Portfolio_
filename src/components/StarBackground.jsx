@@ -3,12 +3,18 @@ import { useEffect, useState } from "react";
 export const StarBackground = () => {
     const [stars, setStars] = useState([]);
     const [meteors, setMeteors] = useState([]);
-
-
-
      useEffect(() => {
         generateStars();
         generateMeteors();
+
+        const handleResize = ()=>{
+            generateStars();
+
+        };
+        window.addEventListener('resize', handleResize)
+        
+        return ()=> window.removeEventListener("resize", handleResize)
+
     }, []);
 
     const generateStars = () => {
@@ -73,5 +79,4 @@ export const StarBackground = () => {
             ))
         }
     </div>
-
 }
