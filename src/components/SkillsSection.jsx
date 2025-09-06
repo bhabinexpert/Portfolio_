@@ -30,6 +30,8 @@ const categories = ["all", "frontend", "backend", 'tools']
 
 export const Skills =()=>{
     const [activeCategory, setActiveCategory] = useState("all");
+    const filteredSkills = skills.filter((skill)=> activeCategory === "all" || skill.category === activeCategory)
+
     return <section id="skills" className="px-4 py-24 relative bg-secondary/30">
         <div className="container mx-auto max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
@@ -53,7 +55,7 @@ export const Skills =()=>{
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {skills.map((skill, key)=>(
+                {filteredSkills.map((skill, key)=>(
                     <div
                     key={key}
                     className="bg-card p-6 rounded-lg shadow-xs card-hover"
