@@ -8,6 +8,12 @@
 .animate-fade-in-delay-2 {
   animation: fade-in 0.7s ease-out 0.2s forwards;
 }
+.animate-fade-in-delay-3 {
+  animation: fade-in 0.7s ease-out 0.4s forwards ;
+}
+.animate-fade-in-delay-4 {
+  animation: fade-in 0.7s ease-out 0.8s forwards ;
+}
 .text-gradient {
   background: linear-gradient(90deg, #7f5af0, #2cb67d);
   -webkit-background-clip: text;
@@ -167,7 +173,7 @@
   box-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
 }
 
-@utility cosmic-button{
+@utility cosmic-button {
   @apply px-2 py-2 rounded-full bg-primary text-primary-foreground font-medium transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)] hover:scale-105 active:scale-95;
 }
 
