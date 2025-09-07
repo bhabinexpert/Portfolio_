@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import { HeroSection } from '../components/HeroSection';
 import { About } from '../components/AboutSection';
 import { Skills } from '../components/SkillsSection';
+import { Project } from '../components/ProjectSection';
 
 
 
@@ -24,6 +25,8 @@ export const Home = ()=> {
     <About/>
 
     <Skills/>
+
+    <Project/>
       
     </div>
   
