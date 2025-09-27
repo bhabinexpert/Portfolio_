@@ -46,7 +46,7 @@ function Navbar() {
             </div>
 
             {/* Mobile Version  */}
-            <button  onClick={()=> setIsMenuOpen((prev)=> !prev)} className='md:hidden p-2 z-50 text-foreground'
+            <button  onClick={()=> setIsMenuOpen((prev)=> !prev)} className='md:hidden p-2 mr-6 z-50 text-foreground'
                 aria-label= {isMenuOpen ? "Close Menu": "Open Menu"}
                 > {isMenuOpen ? <X size={24}/> : <Menu size={24}/>} {' '}</button>
 

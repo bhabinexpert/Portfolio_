@@ -31,7 +31,7 @@ export const ThemeToggle = ()=>{
         }
     }
     return(
-        <button onClick={toggleTheme} className={cn("fixed max-sm:hidden top-4 right-6 z-50 p-2 rounded-ful transition-colors duration-300",
+        <button onClick={toggleTheme} className={cn("fixed top-4 right-1 z-50 p-3 rounded-ful transition-colors duration-300",
             "focus:outline-hidden"
         )}>
             {
